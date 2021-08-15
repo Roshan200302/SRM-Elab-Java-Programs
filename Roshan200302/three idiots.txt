@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+       int n=3,sum=0,min,max;
+       int a[]=new int[n];
+       Scanner sc = new Scanner(System.in);
+       for (int i=0;i<n;i++){
+         a[i]=sc.nextInt();
+         }
+       max=a[0];
+       for (int i=0;i<n;i++)
+       {
+         if(max<a[i])
+         {
+           max=a[i];
+         }
+       }
+       min=a[0];
+       for(int i=0;i<n;i++)
+       {
+         if(min>a[i])
+         {
+           min=a[i];
+         }
+       }
+       for (int i=0;i<n;i++)
+       {
+         sum=sum+a[i];
+       }
+       int mid=sum-(min+max);
+       System.out.println("The minimum value is "+min);
+       System.out.println("The maximum value is "+max);
+       System.out.println("The middle value is "+ mid);
+    }
+}
