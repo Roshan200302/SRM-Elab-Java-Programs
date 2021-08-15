@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class TestClass {
+	 public static void main(String[] args) { 
+       Scanner sc = new Scanner (System.in);
+		int n =sc.nextInt();
+       while(n-->0)
+       {
+         int m= sc.nextInt();
+         int[] a= new int[m];
+         for(int i=0;i<m;i++)
+         {
+           a[i]=sc.nextInt();
+         }
+         Arrays.sort(a);
+         if (m%2==0)
+         {
+           int r =m/2;
+           int s=(a[m/2]+a[r-1])/2;
+           System.out.println(s);
+         }
+         else
+         {
+           System.out.println(a[m/2]);
+         }
+       }
+	}
+}

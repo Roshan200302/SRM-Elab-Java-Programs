@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+		Dob s=new Dob();
+       s.read();
+       s.disp();
+	}
+}
+class Dob{
+  int d,m,y;
+  void read(){
+    Scanner sc=new Scanner(System.in);
+    d=sc.nextInt();
+    m=sc.nextInt();
+    y=sc.nextInt();
+  }
+  void disp(){
+    System.out.println(d+" "+m+" "+y);
+  }
+}

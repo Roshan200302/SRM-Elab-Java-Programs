@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.Scanner;
+import java.lang.Math;
+public class TestClass {
+	 public static void main(String[] args) { 
+		Scanner sc= new Scanner(System.in);
+       int n=sc.nextInt();
+       int sqrt=(int)Math.sqrt(n);
+       if(sqrt*sqrt==n)
+         System.out.println("Yes");
+       else
+         System.out.println("No");
+	}
+}

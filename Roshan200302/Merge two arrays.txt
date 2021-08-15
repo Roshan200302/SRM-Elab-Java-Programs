@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass 
+{
+	 public static void main(String[] args)
+     { 
+		Scanner in = new Scanner(System.in);
+       int a=in.nextInt();
+       int[] b=new int[a];
+       int[] e=new int[1000];
+       int i,k=0;
+       for(i = 0; i<a; i++)
+         b[i]=in.nextInt();
+       int c=in.nextInt();
+       int[] d=new int[c];
+       for(i=0;i<c;i++)
+         d[i]=in.nextInt();
+         for(i=0; i<a; i++)
+         {
+           e[k]=b[i];
+            k++;
+         }
+       for(i=0; i<c; i++)
+       {
+         e[k]=d[i];
+         k++;
+       }
+         for(i=0; i<k; i++)
+           System.out.print(e[i]+" ");
+     }
+	}

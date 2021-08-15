@@ -1,0 +1,9 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+		Scanner sc=new Scanner(System.in);
+       int s=Integer.parseInt(sc.next(),16);
+       System.out.print(Integer.toBinaryString(s));
+	}
+}
