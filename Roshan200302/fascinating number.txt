@@ -1,0 +1,63 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import java.math.*;
+public class TestClass {
+	 public static void main(String[] args) { 
+		Scanner in = new Scanner(System.in);
+		Integer t= in.nextInt();
+		for (int i=0;i<t;i++ )
+		{
+		    Integer n= in.nextInt();
+		    int s=n,count=0,flag=0;
+		    while(s>0)
+		    {
+		        
+		        count++;
+		        s=s/10;
+		         
+		    }
+		    if(count<3)
+		    {
+		        System.out.println("Number should be atleast three digits");
+		        flag=3;
+		    }
+		    else
+		    {
+		    int a[]={n,n*2,n*3};
+		    ArrayList<Integer> b=new ArrayList<Integer>();
+		    for(int j=0;j<a.length;j++)
+		    {
+		        while(a[j]>0)
+		        {
+		            b.add(a[j]%10);
+		            a[j]=a[j]/10;
+		        }
+		    }
+		    Collections.sort(b);
+		    //System.out.println(b.toString());
+		        int z=1;
+		        for(int k=0;k<b.size();k++)
+		        {
+		            if(b.get(k)==z )
+		              {
+		                  flag=1;
+		                  z++;
+		                  
+		              }
+		            else
+		            {    flag=2;
+		              break;}
+		        }
+		    if(flag==2)
+		    {
+		        System.out.println("Not Fascinating");
+		    }
+		    else
+		    {
+		        System.out.println("Fascinating");
+		    }
+		}
+        }
+	}
+}

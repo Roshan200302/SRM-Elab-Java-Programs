@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+		Scanner sc=new Scanner(System.in);
+       long min=sc.nextLong();
+       long yr=min/(365*24*60);
+       long hours=(min%(365*24*60))/(24*60);
+       System.out.print(yr+"\n"+hours);
+       
+	}
+}

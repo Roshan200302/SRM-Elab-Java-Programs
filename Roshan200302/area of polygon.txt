@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.Scanner;
+import java.lang.Math;
+public class TestClass 
+{
+	 public static void main(String[] args) 
+   { 
+	double s,n,ar;
+    Scanner sc = new Scanner(System.in);
+    n = sc.nextDouble();
+    s = sc.nextDouble();
+    ar = (n*(s*s))/(4*(Math.tan(Math.PI/n))); 
+    System.out.printf("The area of Polygon is: %.2f",ar);
+    }
+}

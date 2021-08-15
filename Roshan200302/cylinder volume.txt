@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+       Scanner sc=new Scanner(System.in);
+       double PI=3.14;
+       float radius=sc.nextFloat();
+       float length=sc.nextFloat();
+       double area=radius*radius*PI;
+       double volume=area*length;	
+       System.out.println(String.format("%.02f",area));
+       System.out.println(String.format("%.02f",volume));
+	}
+}
