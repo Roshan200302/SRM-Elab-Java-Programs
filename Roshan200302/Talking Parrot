@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+       Boolean a;
+       int n;
+       Scanner sc = new Scanner(System.in);
+       a=sc.nextBoolean();
+       n=sc.nextInt();
+       sc.close();
+       if (((a==true)&&(n < 7)) ||(n>20))
+       System.out.println("true");
+       else
+         System.out.println("false");	
+	}
+}
